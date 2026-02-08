@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 
-st.set_page_config(page_title="Donatelito Market", page_icon="🐱")
+st.set_page_config(page_title="Best food and groceries", page_icon="🛒")
 
 def calcular_subtotal(nombre_producto, precio_producto, cantidad_producto):
     subtotal = float(precio_producto) * float(cantidad_producto)
@@ -26,8 +26,7 @@ if "table_data" not in st.session_state:
         columns=["producto", "precio", "cantidad", "subtotal"]
     )
     
-st.title("Supermercado Donatelito 🐱")
-st.caption("El gatito más guapo del mundito.")
+st.title("Best food and groceries 🛒")
 
 
 with st.form("producto_form", clear_on_submit=True): 
